@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        input[type="button"] {
+            background-color: darkgrey;
+            color: white;
+            border: 2px solid black;
+            width: 40px;
+            height: 40px;
+            margin: 3px;
+        }
+        input[type="text"] {
+            background-color: whitesmoke;
+            border: 2px solid black;
+            width: 188px;
+            height: 50px;
+        }
+        #sum {
+            border: 2px solid black;
+            width: 187px;
+        }
+        .name {
+            width: 190px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="name">Calculator</div>
+    <form name="calculator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="result" id="result">
+                </td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="7" name="seven" id="seven"></td>
+                <td><input type="button" value="8" name="eight" id="eight"></td>
+                <td><input type="button" value="9" name="nine" id="nine"></td>
+                <td><input type="button" value="/" name="divide" id="divide"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" name="four" id="four"></td>
+                <td><input type="button" value="5" name="five" id="five"></td>
+                <td><input type="button" value="6" name="six" id="six"></td>
+                <td><input type="button" value="*" name="multiply" id="multiply"></td>
+             </tr>
+             <tr>
+                <td><input type="button" value="1" name="one" id="one"></td>
+                <td><input type="button" value="2" name="two" id="two"></td>
+                <td><input type="button" value="3" name="three" id="three"></td>
+                <td><input type="button" value="-" name="minus" id="minus"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" name="zero" id="zero"></td>
+                <td><input type="button" value="." name="point" id="point"></td>
+                <td><input type="button" value="ON" name="on" id="on"></td>
+                <td><input type="button" value="+" name="plus" id="plus"></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="button" value="=" name="sum" id="sum">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
