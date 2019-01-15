@@ -1,5 +1,38 @@
 h1 {
+    font-weight: normal;
+    font-size: 40px;
     font-family: Georgia, Times, serif;
     color: royalblue;
-    text-shadow: 1px 1px 5px grey;
+    text-shadow: 2px 2px 2px grey;
+}
+h2 {
+    font-weight: normal;
+    font-family: Georgia, Times, serif;
+    color: royalblue;
+}
+h3 {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Arial, Verdana, sans-serif;
+    letter-spacing: 2px;
+    color: royalblue
+}
+p {
+    font-family: Arial, Verdana, sans-serif;;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: green;
+}
+a:visited{
+    color: blue
+}
+.italic {
+    float: right;
+    font-style: italic
+}
+.brown {
+    color: #331a00;
 }
