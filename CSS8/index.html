@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css8</title>
+    <link href="css/style8.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Registracija į renginį</h1>
+        <form action="getInfo.php" method="get">
+            <div class="form">
+                <h2>Registracijos forma</h2>
+                <p>Jeigu norite užsiregistruoti į renginį, užpildykite žemiau esančią formą. Žemiau lentelėje galite matyti jau užsiregistravusius dalyvius.</p>
+                <table>
+                    <tr>
+                        <th>Vardas</th>
+                        <td><input type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <th>Pavardė</th>
+                        <td><input type="text" name="lastName" id="lastName"></td>
+                    </tr>
+                    <tr>
+                        <th>Elektroninis paštas</th>
+                        <td><input type="text" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" id="register" name="register" value="Registruoti"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="participants">
+                <h2>Jau užsiregistravę dalyviai:</h2>
+                <table class="tab2">
+                    <tr class="tr1">
+                        <th class="thfirst">Vardas</th>
+                        <td class="tdsec">Pavardė</td>
+                        <td class="tdthird">Elektroninis paštas</td>
+                    </tr>
+                    <tr>
+                        <th class="part">Jonas</th>
+                        <td class="part">Jonaitis</td>
+                        <td class="part">jonaitis@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th class="part">Petras</th>
+                        <td class="part">Petraitis</td>
+                        <td class="part">petraitis@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+</body>
+</html>

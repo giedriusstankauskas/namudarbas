@@ -1,0 +1,48 @@
+th {
+    font-weight: normal;
+    text-align: left;
+    width: 250px;
+}
+.form {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+.participants {
+    background-color: darkseagreen;
+    padding: 10px;
+    margin: 5px 0 0 0;
+}
+input[type="text"] {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}
+input[type="button"] {
+    height: 30px;
+    width: 560px;
+    border-radius: 5px;
+}
+.tab2 {
+    border-collapse: collapse;
+    height: 120px;
+    text-align: center
+}
+.tab2, .tr1, .first, .part {
+    border: 1px solid black;
+}
+.tr1 {
+    background-color: mediumorchid;
+    font-weight: bold;
+    text-align: center
+}
+.thfirst {
+    font-weight: bold;
+    text-align: center;
+    width: 400px;
+}
+.tdsec {
+    width: 80px
+}
+.tdthird {
+    width: 150px;
+}
