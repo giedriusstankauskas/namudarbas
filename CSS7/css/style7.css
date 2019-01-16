@@ -1,0 +1,37 @@
+html {
+    font-family: 'Indie Flower', cursive;
+}
+.calendar {
+    width: 800px;
+}
+.box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    padding: 1px;
+    box-shadow: 2px 2px 9px grey;
+}
+.box:nth-child(7n+6) {
+    background-color: orange;
+}
+.box:nth-child(7n+7) {
+    background-color: orange;
+}
+.important {
+    background-color: red;
+}
+.lessImp {
+    background-color: yellow;
+}
+.notImp {
+    background-color: greenyellow;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    background-color: black;
+    color: white;
+}
