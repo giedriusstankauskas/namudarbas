@@ -1,0 +1,144 @@
+@media screen and (max-width:600px){
+    .cols1{width: 8.33%}
+    .cols2{width: 16.66%}
+    .cols3{width: 25%}
+    .cols4{width: 33.33%}
+    .cols5{width: 41.66%}
+    .cols6{width: 50%}
+    .cols7{width: 58.33%}
+    .cols8{width: 66.66%}
+    .cols9{width: 75%}
+    .cols10{width: 83.33%}
+    .cols11{width: 91.66%}
+    .cols12{width: 100%}
+}
+@media screen and (min-width:601px){
+    .colb1{width: 8.33%}
+    .colb2{width: 16.66%}
+    .colb3{width: 25%}
+    .colb4{width: 33.33%}
+    .colb5{width: 41.66%}
+    .colb6{width: 50%}
+    .colb7{width: 58.33%}
+    .colb8{width: 66.66%}
+    .colb9{width: 75%}
+    .colb10{width: 83.33%}
+    .colb11{width: 91.66%}
+    .colb12{width: 100%}
+}
+body{
+    font-family: Arial;
+    background-color: #2f4353;
+    background-image: linear-gradient(to right bottom, #d2ccc4, #a4a99d, #758880, #4a666a, #2f4353);
+}
+nav{
+    background-color: black;
+}
+header{
+    background-color: black;
+    color: white;
+}
+nav.row, nav.row ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav.row ul li{
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+    color: red;
+}
+footer a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.center{
+    justify-content: center;
+}
+
+#burger{
+    float: left;
+    padding: 0;
+}
+.box {
+    border: 1px solid grey;
+    min-height: 100px;
+    box-shadow: 2px 2px 2px grey;
+    margin: 10px;
+    border-radius: 2px;
+}
+.article{
+    padding: 0 5px 5px 5px;
+}
+
+.navig {
+    background-color: black;
+}
+
+.navig a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navig a:hover {
+    background-color: white;
+    color: black
+}
+.menuIcon{
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+.logoText{
+    padding: 20px 0 0 0;
+    font-weight: 600;
+}
+.h160{
+    display: inline-block
+    height: 160px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+.h200{
+    height: 200px;
+    overflow: hidden;
+}
+h3{
+    margin: 2px;
+    font-size: 15px;
+}
+p{
+    display: inline-block;
+    padding: 0 0 0 5px;
+    margin: 0;
+    font-size: 13px;
+}
+.photo{
+    width: 100%;
+    margin: auto;
+    vertical-align: middle;
+}
+.helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+selection.row img{
+    max-height: 25px;
+    max-width: 160px;
+}
+.slogan{
+    padding: 20px 0 10px 0;
+}
