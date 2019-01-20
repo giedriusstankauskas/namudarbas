@@ -1,0 +1,14 @@
+
+.my-card{
+  min-height: 700px;
+}
+.card-marg{
+  margin: 10px;
+}
+.card-content-marg{
+  margin: 10px !important;
+  padding: 0 !important;
+}
+main p{
+  font-size: 20px;
+}
