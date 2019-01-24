@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js6</title>
+</head>
+
+<body>
+
+  <p>Įveskite savo amžių:</p>
+
+  <input id="amzius"/>
+
+  <button onclick="balsavimas()">Įvesti</button>
+
+  <p id="ivestis"></p>
+
+  <script>
+
+    function balsavimas() {
+      var metai;
+      var tinkamumas;
+      metai = Number(document.getElementById("amzius").value);
+      if (isNaN(metai)) {
+        tinkamumas = "Būtina įvesti skaičių";
+      } else if (metai < 18) {
+        tinkamumas = "Negalite užeiti į svetainę";
+      } else  {
+        tinkamumas = "Galite užeiti į svetainę";
+      }
+      document.getElementById("ivestis").innerHTML = tinkamumas;
+    }
+
+  </script>
+</body>
+</html>
