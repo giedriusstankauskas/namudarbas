@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js9</title>
+  <style>
+    table, th, td{border: 1px solid black;}
+    th{background-color: whitesmoke;}
+    .firstTh{width: 300px;}
+    .secondTh{width: 300px;}
+    .thirdTh{width: 100px;}
+  </style>
+</head>
+
+<body>
+
+  <h1>Viešbučiai (su laisvais kambariais)</h1>
+
+  <h2 id="name1"></h2>
+
+  <h3 id="address1"></h3>
+
+  <table>
+    <tr>
+      <th class="firstTh">Kambario numeris</th>
+      <th class="secondTh">Žmonių skaičius</th>
+      <th class="thirdTh">Kaina</th>
+    </tr>
+    <tr>
+      <td id="roomNo11"></td>
+      <td id="clientCount11"></td>
+      <td id="price11"></td>
+    </tr>
+    <tr>
+      <td id="roomNo12"></td>
+      <td id="clientCount12"></td>
+      <td id="price12"></td>
+    </tr>
+    <tr>
+      <td id="roomNo13"></td>
+      <td id="clientCount13"></td>
+      <td id="price13"></td>
+    </tr>
+  </table>
+
+  <h2 id="name2"></h2>
+
+  <h3 id="address2"></h3>
+
+  <table>
+    <tr>
+      <th class="firstTh">Kambario numeris</th>
+      <th class="secondTh">Žmonių skaičius</th>
+      <th class="thirdTh">Kaina</th>
+    </tr>
+    <tr>
+      <td id="roomNo21"></td>
+      <td id="clientCount21"></td>
+      <td id="price21"></td>
+    </tr>
+    <tr>
+      <td id="roomNo22"></td>
+      <td id="clientCount22"></td>
+      <td id="price22"></td>
+    </tr>
+    <tr>
+      <td id="roomNo23"></td>
+      <td id="clientCount23"></td>
+      <td id="price23"></td>
+    </tr>
+    <tr>
+      <td id="roomNo24"></td>
+      <td id="clientCount24"></td>
+      <td id="price24"></td>
+    </tr>
+  </table>
+
+  <script>
+    var viesbuciai = [
+      {
+      "name": "Radisson",
+      "Address": "Konstitucijos pr. 29",
+      "Rooms":[
+      {"Number":210, "GuestCount":2, "Price":100},
+      {"Number":211, "GuestCount":2, "Price":110},
+      {"Number":212, "GuestCount":2, "Price":109}
+      ]
+      },
+      {
+      "name": "Vilnius Inn",
+      "Address": "Šiaulių g. 3",
+      "Rooms":[
+      {"Number":11, "GuestCount":2, "Price":100},
+      {"Number":15, "GuestCount":1, "Price":58},
+      {"Number":22, "GuestCount":2, "Price":80},
+      {"Number":23, "GuestCount":2, "Price":99}
+      ]
+      }
+      ];
+
+    document.getElementById("name1").innerHTML = viesbuciai[0].name;
+    document.getElementById("address1").innerHTML = viesbuciai[0].Address;
+
+    document.getElementById("roomNo11").innerHTML = viesbuciai[0].Rooms[0].Number;
+    document.getElementById("clientCount11").innerHTML = viesbuciai[0].Rooms[0].GuestCount;
+    document.getElementById("price11").innerHTML = viesbuciai[0].Rooms[0].Price;
+
+    document.getElementById("roomNo12").innerHTML = viesbuciai[0].Rooms[1].Number;
+    document.getElementById("clientCount12").innerHTML = viesbuciai[0].Rooms[1].GuestCount;
+    document.getElementById("price12").innerHTML = viesbuciai[0].Rooms[1].Price;
+
+    document.getElementById("roomNo13").innerHTML = viesbuciai[0].Rooms[2].Number;
+    document.getElementById("clientCount13").innerHTML = viesbuciai[0].Rooms[2].GuestCount;
+    document.getElementById("price13").innerHTML = viesbuciai[0].Rooms[2].Price;
+
+
+
+    document.getElementById("name2").innerHTML = viesbuciai[1].name;
+    document.getElementById("address2").innerHTML = viesbuciai[1].Address;
+
+    document.getElementById("roomNo21").innerHTML = viesbuciai[1].Rooms[0].Number;
+    document.getElementById("clientCount21").innerHTML = viesbuciai[1].Rooms[0].GuestCount;
+    document.getElementById("price21").innerHTML = viesbuciai[1].Rooms[0].Price;
+
+    document.getElementById("roomNo22").innerHTML = viesbuciai[1].Rooms[1].Number;
+    document.getElementById("clientCount22").innerHTML = viesbuciai[1].Rooms[1].GuestCount;
+    document.getElementById("price22").innerHTML = viesbuciai[1].Rooms[1].Price;
+
+    document.getElementById("roomNo23").innerHTML = viesbuciai[1].Rooms[2].Number;
+    document.getElementById("clientCount23").innerHTML = viesbuciai[1].Rooms[2].GuestCount;
+    document.getElementById("price23").innerHTML = viesbuciai[1].Rooms[2].Price;
+
+    document.getElementById("roomNo24").innerHTML = viesbuciai[1].Rooms[3].Number;
+    document.getElementById("clientCount24").innerHTML = viesbuciai[1].Rooms[3].GuestCount;
+    document.getElementById("price24").innerHTML = viesbuciai[1].Rooms[3].Price;
+
+  </script>
+
+
+</body>
+</html>
