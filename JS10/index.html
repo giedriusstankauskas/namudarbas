@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js10</title>
+</head>
+
+<body>
+
+  <script>
+
+    var objektas1 = {"id":1,"item":"Atsuktuvas","date":"2018","color":"geltona","price": "5"};
+    var objektas2 = {"id":2,"item":"Raktas","date":"2018","color":"pilka","price": "2"};
+    var objektuMasyvas = [objektas1,objektas2];
+
+    for(var i = 0; i < objektuMasyvas.length; i++){
+      console.log("# " + objektuMasyvas[i].id);
+      console.log("Preke " + objektuMasyvas[i].item);
+      console.log("Pagaminimo data " + objektuMasyvas[i].date);
+      console.log("Spalva " + objektuMasyvas[i].color);
+      console.log("Kaina " + objektuMasyvas[i].price);
+      console.log("\n");
+    }
+
+  </script>
+
+</body>
+
+</html>
