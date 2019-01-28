@@ -1,0 +1,17 @@
+function numOne() {document.calculator.input.value += 1;}
+function numTwo() {document.calculator.input.value += 2;}
+function numThree() {document.calculator.input.value += 3;}
+function numFour() {document.calculator.input.value += 4;}
+function numFive() {document.calculator.input.value += 5;}
+function numSix() {document.calculator.input.value += 6;}
+function numSeven() {document.calculator.input.value += 7;}
+function numEight() {document.calculator.input.value += 8;}
+function numNine() {document.calculator.input.value += 9;}
+function numZero() {document.calculator.input.value += 0;}
+function btnDivide() {document.calculator.input.value += "/";}
+function btnMultiply() {document.calculator.input.value += "*";}
+function btnMinus() {document.calculator.input.value += "-";}
+function btnPlus() {document.calculator.input.value += "+";}
+function onc() {document.calculator.input.value = "";}
+function btnSumAll() {document.calculator.input.value = eval(calculator.input.value);}
+function numDot() {document.calculator.input.value += ".";}

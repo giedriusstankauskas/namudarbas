@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalculatorJS</title>
+  <link href="css/myStyle11.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="name">Calculator</div>
+  <div class="container">
+    <form name="calculator">
+        <div>
+            <input type="text" name="input" placeholder="0">
+        </div>
+        <div>
+            <input type="button" value="ON/C" name="on" id="ac" class="pale" onclick="onc()">
+            <input type="button" value="/" name="divide" class="orange" onclick="btnDivide()">
+        </div>
+        <div>
+            <input type="button" value="7" name="seven" onclick="numSeven()">
+            <input type="button" value="8" name="eight" onclick="numEight()">
+            <input type="button" value="9" name="nine" onclick="numNine()">
+            <input type="button" value="*" name="multiply" class="orange" onclick="btnMultiply()">
+         </div>
+         <div>
+            <input type="button" value="4" name="four" onclick="numFour()">
+            <input type="button" value="5" name="five" onclick="numFive()">
+            <input type="button" value="6" name="six" onclick="numSix()">
+            <input type="button" value="-" name="minus" class="orange" onclick="btnMinus()">
+        </div>
+        <div>
+            <input type="button" value="1" name="one" onclick="numOne()">
+            <input type="button" value="2" name="two" onclick="numTwo()">
+            <input type="button" value="3" name="three" onclick="numThree()">
+            <input type="button" value="+" name="plus" class="orange" onclick="btnPlus()">
+        </div>
+        <div>
+            <input type="button" value="0" name="zero" id="zer" onclick="numZero()">
+            <input type="button" value="." name="point" onclick="numDot()">
+            <input type="button" value="=" name="sum" class="orange" onclick="btnSumAll()">
+        </div>
+    </form>
+  </div>
+
+  <script src="js/actions.js"></script>
+</body>
+</html>
