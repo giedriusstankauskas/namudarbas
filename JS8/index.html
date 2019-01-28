@@ -8,10 +8,22 @@
 
 <body>
 
+  <button onclick="show()">Parodykite chebros sąrašą</button>
+  <button onclick="remove()">Išmeskite Petrą iš chebros</button>
+
   <script>
     var names = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
-    names.splice(2, 1);
-    console.log(names);
+    var noPrint = "Petras";
+
+    function show() {
+      console.log(names);
+    }
+
+    function remove() {
+      names.splice( names.indexOf(noPrint), 1 );
+      console.log(names);
+    }
+
   </script>
 
 </body>
