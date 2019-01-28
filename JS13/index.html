@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS 13 namu darbas</title>
+  <style>
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    img{
+      width: 200px;
+      height: 140px;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="gallery"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    var images = ["https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/bycycle.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/chess.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/jump.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/kiting.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/lion.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/onwater.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/para.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/photographer.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/pieva.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/supynes.jpg"];
+
+    var list = "";
+
+    list = '<h1>' + 'Galerija' + '</h1>'
+
+    for (i=0; i < images.length; i++){
+      list += '<img src="' + images[i] + '">'
+    }
+
+    document.getElementById('gallery').innerHTML = list;
+
+  </script>
+</body>
+</html>
