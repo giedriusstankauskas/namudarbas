@@ -20,64 +20,70 @@
   <p id="listHotels"></p>
 
   <script>
-    var viesbuciai = [
-      {
-      "name": "Radisson",
-      "Address": "Konstitucijos pr. 29",
-      "Rooms":[
-      {"Number":210, "GuestCount":2, "Price":100},
-      {"Number":211, "GuestCount":2, "Price":110},
-      {"Number":212, "GuestCount":2, "Price":109}
-      ]
-      },
-      {
-      "name": "Vilnius Inn",
-      "Address": "Šiaulių g. 3",
-      "Rooms":[
-      {"Number":11, "GuestCount":2, "Price":100},
-      {"Number":15, "GuestCount":1, "Price":58},
-      {"Number":22, "GuestCount":2, "Price":80},
-      {"Number":23, "GuestCount":2, "Price":99}
-      ]
-      }
+    var viesbuciai =
+      [
+        {
+          "name": "Radisson",
+          "Address": "Konstitucijos pr. 29",
+          "Rooms":
+            [
+              {"Number":210, "GuestCount":2, "Price":100},
+              {"Number":211, "GuestCount":2, "Price":110},
+              {"Number":212, "GuestCount":2, "Price":109}
+            ]
+        },
+        {
+          "name": "Vilnius Inn",
+          "Address": "Šiaulių g. 3",
+          "Rooms":
+            [
+              {"Number":11, "GuestCount":2, "Price":100},
+              {"Number":15, "GuestCount":1, "Price":58},
+              {"Number":22, "GuestCount":2, "Price":80},
+              {"Number":23, "GuestCount":2, "Price":99}
+            ]
+        }
       ];
 
-    var output = "";
 
 
-    output = '<h1>' + 'Viešbučiai (su laisvais kambariais)' + '</h1>';
-
-    for(var i = 0; i < viesbuciai.length; i++){
-
-      output += '<h2>' + viesbuciai[i].name + '</h2>';
-
-      output += '<h3>' + viesbuciai[i].Address + '</h3>';
-
-      output += '<table>'
-
-      output += '<tr>';
-      output += '<th class="firstTh">' + 'Kambario numeris' + '</th><th class="secondTh">' + 'Žmonių skaičius' + '</th><th class="thirdTh">' + 'Kaina' + '</th>';
-      output += '</tr>';
-
-      output += '<tr>';
-      output += '<td>' + viesbuciai[i].Rooms[0].Number + '</td><td>' + viesbuciai[i].Rooms[0].GuestCount + '</td><td>' + viesbuciai[i].Rooms[0].Price + '</td>';
-      output += '</tr>';
-
-      output += '<tr>';
-      output += '<td>' + viesbuciai[i].Rooms[1].Number + '</td><td>' + viesbuciai[i].Rooms[1].GuestCount + '</td><td>' + viesbuciai[i].Rooms[1].Price + '</td>';
-      output += '</tr>';
-
-      output += '<tr>';
-      output += '<td>' + viesbuciai[i].Rooms[2].Number + '</td><td>' + viesbuciai[i].Rooms[2].GuestCount + '</td><td>' + viesbuciai[i].Rooms[2].Price + '</td>';
-      output += '</tr>';
-
-      output += '</table>';
-
-    }
     function showList() {
-      document.getElementById('listHotels').innerHTML = output;
-    }
 
+      var output = "";
+
+      output = '<h1>' + 'Viešbučiai (su laisvais kambariais)' + '</h1>';
+
+      for(var i = 0; i < viesbuciai.length; i++){
+
+        output += '<h2>' + viesbuciai[i].name + '</h2>';
+
+        output += '<h3>' + viesbuciai[i].Address + '</h3>';
+
+        output += '<table>'
+
+        output += '<tr>';
+        output += '<th class="firstTh">' + 'Kambario numeris' + '</th><th class="secondTh">' + 'Žmonių skaičius' + '</th><th class="thirdTh">' + 'Kaina' + '</th>';
+        output += '</tr>';
+
+        output += '<tr>';
+        output += '<td>' + viesbuciai[i].Rooms[0].Number + '</td><td>' + viesbuciai[i].Rooms[0].GuestCount + '</td><td>' + viesbuciai[i].Rooms[0].Price + '</td>';
+        output += '</tr>';
+
+        output += '<tr>';
+        output += '<td>' + viesbuciai[i].Rooms[1].Number + '</td><td>' + viesbuciai[i].Rooms[1].GuestCount + '</td><td>' + viesbuciai[i].Rooms[1].Price + '</td>';
+        output += '</tr>';
+
+        output += '<tr>';
+        output += '<td>' + viesbuciai[i].Rooms[2].Number + '</td><td>' + viesbuciai[i].Rooms[2].GuestCount + '</td><td>' + viesbuciai[i].Rooms[2].Price + '</td>';
+        output += '</tr>';
+
+        output += '</table>';
+
+      }
+
+        document.getElementById('listHotels').innerHTML = output;
+
+    }
   </script>
 
 </body>
