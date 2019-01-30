@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kompai</title>
+    <link href="css/style9.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="showList"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+        var showList = $('#showList');
+        showList.text('Please wait, loading item list...');
+      $.ajax({
+        type: "GET",
+        url: 'http://kitchenoffice.eu/service/computers.php',
+        dataType: 'json',
+        success: function(result) {
+          console.log(result);
+
+          var output = '<div class="shop">';
+
+          for (var i in result) {
+            output += '<div class="box">';
+            output += '<p class="noDisplay">' + result[i].id + '</p>';
+            output += '<img src="' + result[i].image + '">';
+            output += '<a class="itemName" href="#">' + result[i].item + '</a>';
+            output += '<p class="info">' + result[i].descriptions[0] + '<br>' + result[i].descriptions[1] + '</p>';
+            output += '<p class="price">' + result[i].price + ' &euro;</p>';
+            output += '<p class="oldPrice">' + result[i].oldprice + ' &euro;</p>';
+            output += '<input type="button" href="#" name="order" id="order" value="Užsakyti">';
+            output += '<p class="compensation">+ 7,01 &euro; Kompensacinis atlyginimas autoriams</p>';
+            output += '</div>';
+          }
+          output += '</div>';
+
+          showList.html(output);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
