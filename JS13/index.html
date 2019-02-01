@@ -8,10 +8,10 @@
     .container{
       display: flex;
       flex-wrap: wrap;
+      max-width: 700px;
     }
     img{
       width: 200px;
-      height: 140px;
       margin: 5px;
     }
   </style>
@@ -23,20 +23,22 @@
     <div id="gallery"></div>
   </div>
 
+
+  <img src="index.html" alt="fdfdf">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     var images = ["https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/bycycle.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/chess.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/jump.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/kiting.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/lion.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/onwater.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/para.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/photographer.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/pieva.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/supynes.jpg"];
 
-    var list = "";
-
-    list = '<h1>' + 'Galerija' + '</h1>'
+    var list = '<h1>' + 'Galerija' + '</h1>'
 
     for (i=0; i < images.length; i++){
-      list += '<img src="' + images[i] + '">'
+      var result = images[i].match(/offers[/](.*).jpg/)[1];
+      var upResult = result.charAt(0).toUpperCase() + result.slice(1)
+      list += '<img src="' + images[i] + '" alt="' + upResult + '">'
+      console.log(upResult);
     }
 
     document.getElementById('gallery').innerHTML = list;
-
   </script>
 </body>
 </html>
